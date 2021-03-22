@@ -14,4 +14,12 @@ Executed_auto_code_EG
 
 /*eg: %Means(dataset=sashelp.class,stats_list= n nmiss);*/
 %Means(dataset=sashelp.class, stats_list =n nmiss);
+***********************;
+
+/*compress=yes*/
+options compress=yes reuse=yes;
+
+data aaa;
+	set sashelp.class;
+run;
 *****************************;
